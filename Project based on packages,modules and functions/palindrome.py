@@ -1,7 +1,5 @@
 def ispalindrome(name):
-    return(name == name[::-1])
-
-
-if __name__ == "__main__":
-    name = input()
-    print(ispalindrome(name))
+    if(name == name[::-1]):
+        return("Yes it is palindrome")
+    else:
+        return("No,it is not a palindrome")
