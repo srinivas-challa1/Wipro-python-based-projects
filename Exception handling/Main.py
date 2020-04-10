@@ -22,7 +22,9 @@ def calculate(fname):
 
     except IOError:
         print("File doesn't exist cannot perform operations on the file")
-
+    except ValueError:
+        print("Invalid input:")
+        print(repr(line))
     else:
         print("No of items purchased:{}".format(ItemsPurchased))
         print("No of free items:{}".format(FreeItems))
